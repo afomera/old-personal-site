@@ -1,8 +1,40 @@
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('##myModal').click(function() {
+      $('#myModal').reveal();
+    });
+  });
+</script>
+
+
 <div class="row">
   <div class="tweleve columns">
     <h2>My Projects!</h2>
-       <p>This is the story about the time</p>
+         <p>I enjoy tinkering around with web design/development and here is where I'll list some of my proud, and not so proud achievements for the interwebs to view and see.</p>
   </div>
 </div>
+  <div class="row">
+    <div class="six columns">
+      <div class="panel">
+        <img src="../images/sites/andrewfomera.png" />
+       <h5>AndrewFomera.com</h5>
+        <p>This was a complete build up from the ground up. Starting with the Foundation framework from Zurb. For more information click the button</p>
+         <a href="#" class="button" data-reveal-id="myModal">More information</a>
+      </div>
+    </div>
+    <div class="six columns">
+      <div class="panel">
+       <h5>This is a regular panel.</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued. </p>
+      </div>
+    </div>
+  </div>
 
 
+  <div id="myModal" class="reveal-modal">
+  <h2>AndrewFomera.com</h2>
+  <p class="lead">Completely rebuilt</p>
+  <p><img src="../images/sites/andrewfomera.png" alt="AnrewFomera.com Screenshot"/></p>
+  <p>AndrewFomera.com is built using Sinatra, which is a lightweight framework for Ruby. Thanks to the Foundation framework by Zurb I was able to get my design up and running with a working prototype in about three hours.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>

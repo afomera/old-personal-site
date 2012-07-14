@@ -14,6 +14,10 @@ class AndrewApp < Sinatra::Base
     erb :projects, :layout => :layout2
   end
 
+  get '/blog' do
+    redirect 'http://andrewfomera.blogspot.com/', 'Redirect to blog'
+  end
+
   get '/contact' do
     @title = 'Contact Me'
     erb :contact
