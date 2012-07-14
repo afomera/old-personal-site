@@ -6,8 +6,12 @@ class AndrewApp < Sinatra::Base
 
   get '/about' do
     @title = 'About Me'
-
     erb :about
+  end
+
+  get '/about/projects' do
+    @title = 'My Projects'
+    erb :projects, :layout => :layout2
   end
 
   get '/contact' do
