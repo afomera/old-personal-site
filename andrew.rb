@@ -37,8 +37,7 @@ class AndrewApp < Sinatra::Base
               :subject => @email_subject,
               :body => @contact_message
 
-    @contact_name.to_s
-
+    redirect ('/')
   end
 
 
