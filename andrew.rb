@@ -37,7 +37,9 @@ class AndrewApp < Sinatra::Base
               :subject => @email_subject,
               :body => @contact_message
 
+
     redirect '/', 'Redirect to main page'
+
   end
 
 
